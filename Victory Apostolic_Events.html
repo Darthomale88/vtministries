@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="script.js" defer > </script> <!-- defer = loads after the html --->
+	<link rel="stylesheet" href="VictoryApostolicStyles-2.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="evo-calendar.mignight-blue.min.css">
+	<link rel="stylesheet" href="evo-calendar.min.css">
+	<!-- Add the evo-calendar.css for styling -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+	<title>Victory Tabernacle</title>
+</head>
+<body>
+	<header>
+			<div class="top-navbar">
+			<div class="top-contact">
+				<div class="top-icon">
+					<i><img src="Images/icon-phone.png"></i>
+					<p>(317) 917-9663</p>
+				</div>
+				<div class="top-icon">
+					<i><img src="Images/icon-mail.png"></i>
+					<p>vtministries@gmail.com</p>
+				</div>
+			</div>
+			<div class="top-social">
+				<a href="https://www.facebook.com/vtapostolic" target="blank"><img src="Images/facebook.png" alt="Facebook"></a>
+						
+				<a href="https://www.instagram.com/vtministries" target="blank"><img src="Images/instagram.png" alt="Instagram"></a> 
+				
+				<a href="https://www.youtube.com/@victorytabernacleapostolic2098" target="blank"><img src="Images/youtube.png" alt="Youtube"></a>
+			</div>
+		</div>	
+		<div class="navbar no-animation-navbar">
+			
+<!-- Logo -->
+				<div class="logo">
+					<a href="Victory Apostolic.html"><img src="Images/vt_logo-removebg.png"></a>
+				</div>
+				
+<!-- Navigation -->
+				<nav class="menu">
+					<ul>
+						<li><a href="Victory Apostolic.html" >Home</a></li></li>
+						<li>
+							<a href="Victory Apostolic_About.html" >About Us</a>
+								<ul>
+									<li><a>Our Pastor</a></li>
+									<li><a>Our History</a></li>
+									<li><a>Our Beliefs</a></li>
+									
+								</ul>		
+						</li>
+						<li>
+							<a href="">Events</a>
+								<ul>
+									<li><a href="Victory Apostolic_Events.html">Calendar</a></li>
+									<li> <a href="Victory Apostolic_Events.html">Announcements</a></li>
+								</ul>
+						</li>
+						<li><a href="https://boxcast.tv/channel/o64bfthsft9gbmggecvv" target="blank" >Watch Live</a></li>
+						<li><a href="Victory Apostolic_Give.html">Give</a></li>
+						
+								
+						<li>
+							<a>More</a>
+								<ul>
+									<li><a href="Victory Apostolic_Gallery.html">Gallery</a></li>
+									<li><a href="https://apostolicrestorationconference.com/" target="blank">ARC</a></li>
+									<li><a href="#">Sunday School</a></li>
+									<li><a href="#">Staff</a></li>
+								</ul>
+						</li>
+					
+						
+					</ul>		
+										
+				</nav>
+				<img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+				
+				
+				
+		</div>
+		
+	</header>			
+<!------------------Announcement Slider Images  -------------------->
+		<div class="banner2">
+	<!--	<div class="banneroverlay"> </div>-->
+		<img src="Images/givebanner1b&w.jpg">
+		<div class="text-boxCenter">
+			<h1> Events </h1>
+			
+		</div>
+	
+		</div>		
+
+
+
+
+<!------------------Calendar  -------------------->		
+		
+		<div class="hero">
+		<div class="gallery-container">
+			<div class="heading"> <h3> Calendar</h3></div>
+		</div>
+			<div id="calendar"></div>		
+		</div>
+		
+		
+		
+		
+		<!-- Add jQuery library (required) -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		
+
+		<!-- Add the evo-calendar.js for.. obviously, functionality! -->
+		<script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+		
+
+		<script src="evo-calendar.min.js"></script>
+		
+		
+		<script>
+					// Initialize evo-calendar in your script file or an inline <script> tag
+				$(document).ready(function() {
+					$('#calendar').evoCalendar({
+					
+					
+						theme: "Midnight Blue",
+						calendarEvents: [
+			  {
+				id: 'event1', // Event's ID (required)
+				name: "New Year", // Event name (required)
+				date: "November/20/2023", // Event date (required)
+				description: "Vacation leave for 3 days.", // Event description (optional)
+				type: "holiday", // Event type (required)
+				everyYear: true // Same event every year (optional)
+			  },
+			  
+			  {
+				id: 'event2', // Event's ID (required)
+				name: "New Year", // Event name (required)
+				date: "November/20/2023", // Event date (required)
+				description: "Vacation leave for 3 days.", // Event description (optional)
+				type: "holiday", // Event type (required)
+				everyYear: true // Same event every year (optional)
+			  },
+			  
+			  {
+				id: 'event3resec', // Event's ID (required)
+				name: "New Year", // Event name (required)
+				date: "November/20/2023", // Event date (required)
+				description: "Vacation leave for 3 days.", // Event description (optional)
+				type: "holiday", // Event type (required)
+				everyYear: true // Same event every year (optional)
+			  },
+			  
+			  {
+				id: 'bHay68s', // Event's ID (required)
+				name: "New Year", // Event name (required)
+				date: "November/20/2023", // Event date (required)
+				description: "Vacation leave for 3 days.", // Event description (optional)
+				type: "holiday", // Event type (required)
+				everyYear: true // Same event every year (optional)
+			  },
+			  
+			  {
+				name: "Vacation Leave",
+				badge: "11/20 - 11/20", // Event badge (optional)
+				date: ["November/20/2023", "Nobember/20/2023"], // Date range
+				description: "Vacation leave for 3 days.", // Event description (optional)
+				type: "event",
+				color: "#63d867" // Event custom color (optional)
+			  }
+			]
+					})
+				})
+		
+		</script>
+
+
+<!------------------FEATURED PRODUCTS -------------------->
+
+
+	
+	
+<!--------------- offer  ---------------->
+
+	
+	
+<!--------------------------- testimonial   -------------------->	
+	
+	
+<!------------------ brands   ----------------->	
+	
+	
+	
+	
+	
+<!------------------ footer   ----------------->	
+	<footer class="maroon">
+			<div class="large-container">
+				<div class="row">
+				
+					<div class="col-1" style="font-size: 25px; color: white; font-weight: 100;letter-spacing: 10;" >
+						<div class="logo-footer"><a href="Victory Apostolic.html"><img src="Images/VTlogo.png"></a></div>			
+						
+						<h5>Bishop William L. Harris Sr. D.D.</h5>
+						<h5>Victory Tabernacle Apostolic Faith Church</h5>
+						<h5>761 N. Sheffield | Indiapolis, IN 46222 | (317) 719-4088</h5>
+						<h5 class="copyright"> Copyright 2023</h5>
+						
+						<h4 style="margin-top:80px;font-size:50px;font-weight:400;">Follow us</h4>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/vtapostolic"><img src="Images/facebook.png" alt="Facebook"></a></li>
+						<!--	<li><a href="#"><img src="Images/twitter.png" alt="Twitter"></a></li> -->
+							<li><a href="https://www.instagram.com/vtministries"><img src="Images/instagram.png" alt="Instagram"></a></li> 
+							<li><a href="https://www.youtube.com/@victorytabernacleapostolic2098"><img src="Images/youtube.png" alt="Youtube"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<!---------------------------------- JS for toggle Menu-------------------------------->	
+
+
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+	
+	MenuItems.style.maxHeight = "0px";
+	
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px"
+			}
+		else
+			{
+				MenuItems.style.maxHeight = "0px"
+			}
+	}
+</script>
+<!-- -----------------------------------script for Announcements Carousel-------------------------->
+<script>
+const buttons = document.querySelectorAll("[data-carousel-button]")
+
+buttons.forEach(button => {
+	button.addEventListener("click", () => {
+		const offset = button.dataset.carouselButton === "next" ? 1 : -1
+		const slides = button
+			.closest("[data-carousel]")
+			.querySelector("[data-slides]")
+			
+		const activeSlide = slides.querySelector("[data-active]")
+		let newIndex = [...slides.children].indexOf(activeSlide) + offset
+		if (newIndex < 0) newIndex = slides.children.length -1
+		if (newIndex >= slides.children.legnth) newIndex = 0
+		
+		slides.children[newIndex].dataset.active = true
+		delete activeSlide.dataset.active
+	})
+})
+
+
+
+</script>
+</body>
+
+</html>
