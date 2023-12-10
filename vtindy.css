@@ -1590,6 +1590,7 @@ footer{
 	
 .container{ 
 	width: 100%;
+	position: relative;
 /*	background: red;/**/
 	margin: 10px 0px;
 	display: flex;
