@@ -1598,6 +1598,7 @@ footer{
 	align-items: center;
 	justify-content: space-between;
 	padding: 50px 5px;
+	z-index: 5;
 	
 }
 
