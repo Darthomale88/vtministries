@@ -545,12 +545,110 @@ h2{
 }
 
 
+
+
 footer{
 	width: 100%;
 	height: 60vh;
-	background: blue;/**/
+	background: var(--overlay-color);/**/
+	font-size: var(--small-print);
 }
 
+.navigation-container{
+	display: flex;
+	width: 400px;
+/*	background: gray;/**/
+}
+
+footer .col-2{
+/*	background: red;/**/
+}
+footer .col-text ul{
+	text-decoration: none;
+	width: 100%;
+	
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/*	background: blue;/**/
+}
+footer .col-text{
+	min-height: 100px;
+	min-width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+/*	background: red;/**/
+	margin: 2px;
+	padding: 0;
+}
+
+footer ul li{
+	padding: 0 5px;
+}
+footer ul li a{
+	text-align: start;
+	cursor: pointer;
+	color: var(--accent-color);
+	margin: 12px 0;
+/*	background: black;/**/
+}
+
+footer ul li a:hover{
+	color: #fff;
+}
+
+footer .col-3 p{font-size: var(--small-print); }
+
+footer .title-row .logo{
+	margin-left: 0px;
+}
+
+footer .title-row .logo img{
+	animation: none;
+	height: 60px;
+}
+
+footer .col-title{
+	color: #fff;
+	font-size: var(--paragraph);
+	
+}
+footer .title-row{
+	font-size: var(--paragraph);
+	width: 90%;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+/*	background: red;/**/
+	height: 40px;
+	padding: 0;
+}
+.social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social img{
+	display: flex;
+/*	-webkit-filter: invert(100%); /* Safari/Chrome */
+    color: white;
+	padding: 15px;
+	border-radius: 50%;
+	/*	margin: .5rem .5em .5rem; /**/
+	height: 4.5rem;
+	transition: background 1s ease;
+}
+
+
+.social img:hover{
+	background: var(--accent-color);
+	
+	/*transform: scale(1.1) translateY(-5px) ; /*translateY brings the image up/down. (-) makes image up. Its absence, down.*/
+	
+}	/**/
 
 
 
